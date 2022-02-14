@@ -1,0 +1,53 @@
+Last login: Mon Feb 14 11:19:48 on ttys000
+jinalpatel@JINALs-MacBook-Pro ~ % mv aboutus.html about.html
+mv: rename aboutus.html to about.html: No such file or directory
+jinalpatel@JINALs-MacBook-Pro ~ %  d Documents/greeter/
+zsh: command not found: d
+jinalpatel@JINALs-MacBook-Pro ~ % cd Documents/greeter/ 
+jinalpatel@JINALs-MacBook-Pro greeter % mv aboutus.html about.html
+jinalpatel@JINALs-MacBook-Pro greeter % git rm about.html
+fatal: pathspec 'about.html' did not match any files
+jinalpatel@JINALs-MacBook-Pro greeter % git add aboutus.html
+fatal: pathspec 'aboutus.html' did not match any files
+jinalpatel@JINALs-MacBook-Pro greeter % mv aboutus.html about.html
+mv: aboutus.html: No such file or directory
+jinalpatel@JINALs-MacBook-Pro greeter % mv about.html aboutus.html^C
+jinalpatel@JINALs-MacBook-Pro greeter % git rm about.html^C
+fatal: pathspec 'about.html^C' did not match any files
+jinalpatel@JINALs-MacBook-Pro greeter % mv aboutus.html^C about.html   
+jinalpatel@JINALs-MacBook-Pro greeter % mv about.html aboutus.html  
+jinalpatel@JINALs-MacBook-Pro greeter % git add aboutus.html
+jinalpatel@JINALs-MacBook-Pro greeter % git rm about.html           
+fatal: pathspec 'about.html' did not match any files
+jinalpatel@JINALs-MacBook-Pro greeter % git mv about.html aboutus.html
+fatal: bad source, source=about.html, destination=aboutus.html
+jinalpatel@JINALs-MacBook-Pro greeter % git commit -m "Renamed about.html to aboutus.html"
+[about-01 da4099a] Renamed about.html to aboutus.html
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ rename about.html => aboutus.html (70%)
+jinalpatel@JINALs-MacBook-Pro greeter % vim aboutus.html
+
+<html>
+    <head>
+        <title>About the web application</title>
+    </head>
+<body>
+    <h1>About this web application</h1>
+    <h3>Thank You.</h3>
+    <h2>Wel - come</h2>
+    <a href="index.html">Back</a>
+</body>
+</html>
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
